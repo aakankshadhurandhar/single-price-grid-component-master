@@ -4,8 +4,9 @@
     --cyan:hsl(179, 62%, 43%);
     --brightyellow:hsl(71, 73%, 54%);
     --lightgray:hsl(204, 43%, 93%);
-    --grayishblue:hsl(218, 22%, 67%);
+    --grayishblue:hsl(217, 24%, 75%);
     --karla:"Karla",sans-serif;
+    --off-cyan: hsla(179, 62%, 43%, 0.699);
 
 }
 
@@ -48,10 +49,10 @@ p,h4,h1{
     background-color: var(--brightyellow);
     text-decoration: none;
     font-weight: 700;
-    width: 100%;
+    width: 50%;
     box-shadow: .1rem .1rem .9rem .2rem  rgba(92, 90, 90, 0.25);
     padding: .5rem 1.25rem; 
-    border-radius: .5rem;
+    border-radius: .2rem;
 }
 .btn :hover{
     color:var(--cyan);
@@ -60,4 +61,61 @@ p,h4,h1{
 /**main container css **/
 .container{
     background: white;
+    border-radius: 1rem;
+/**header**/
+}
+.container #one{
+    padding: .20rem 2rem;
+}
+/**price section**/
+.container #money{
+    background: var(--cyan);
+    color: white;
+    padding: .15rem 1rem 1.5rem 1rem;
+    border-bottom-left-radius: .5rem;
+}
+/**why us**/
+.whyus{
+    background: var(--off-cyan);
+    color: white;
+    line-height: 0;
+    border-bottom-right-radius: .5rem;
+}
+.container .whyus p{
+ color: rgba(255, 255, 255, 0.705);
+ line-height: .4;
+ font-size: 1.1rem;
+
+}
+/**media only desktop **/
+@media screen and (min-width: 594px){
+    body {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 250px;
+  }
+
+  .container #one {
+    grid-column: 1 /span 3;
+    padding: 1rem 2rem;
+    justify-content: center;
+  }
+
+  .container #money {
+    padding: .75rem 2rem;
+  }
+
+  .container .whyus {
+    padding: .75rem 2rem;
+  }
+
+  .container .whyus p {
+    line-height: .4;
+  }
+    
+      
 }
