@@ -128,7 +128,7 @@ p,h4,h1{
     flex-direction: column;
 }
  .container #money{
-     padding-bottom: 0;
+     padding-bottom: 0.5rem;
      border-radius: 0;
  }  
  .container #one{
@@ -136,6 +136,11 @@ p,h4,h1{
      border-top-right-radius: .5rem;
 
  }  
- 
+ .container #whyus{
+     border-bottom-right-radius: .5rem;
+     border-bottom-left-radius: .5rem;
+     padding: .5rem 0 .3rem .5rem;
+ }
+
  }   
       
