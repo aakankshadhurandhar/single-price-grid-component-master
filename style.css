@@ -116,6 +116,26 @@ p,h4,h1{
   .container .whyus p {
     line-height: .4;
   }
-    
-      
 }
+ @media screen and (max-width:593px){
+     body{
+         max-width: 375px;
+         margin: 0;
+     }
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+ .container #money{
+     padding-bottom: 0;
+     border-radius: 0;
+ }  
+ .container #one{
+     border-top-left-radius: .5rem;
+     border-top-right-radius: .5rem;
+
+ }  
+ 
+ }   
+      
